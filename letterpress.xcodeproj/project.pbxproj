@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		947554C0141DD3E7000B1E18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554BF141DD3E7000B1E18 /* UIKit.framework */; };
+		947554C2141DD3E7000B1E18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554C1141DD3E7000B1E18 /* Foundation.framework */; };
+		947554C4141DD3E7000B1E18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554C3141DD3E7000B1E18 /* CoreGraphics.framework */; };
+		947554CA141DD3E7000B1E18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 947554C8141DD3E7000B1E18 /* InfoPlist.strings */; };
+		947554CC141DD3E7000B1E18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 947554CB141DD3E7000B1E18 /* main.m */; };
+		947554D0141DD3E8000B1E18 /* letterpressAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 947554CF141DD3E8000B1E18 /* letterpressAppDelegate.m */; };
+		947554D3141DD3E8000B1E18 /* letterpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947554D2141DD3E8000B1E18 /* letterpressViewController.m */; };
+		947554D6141DD3E8000B1E18 /* letterpressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947554D4141DD3E8000B1E18 /* letterpressViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		947554BB141DD3E7000B1E18 /* letterpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letterpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		947554BF141DD3E7000B1E18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		947554C1141DD3E7000B1E18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		947554C3141DD3E7000B1E18 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		947554C7141DD3E7000B1E18 /* letterpress-Info.plist */ = {isa = PBXFileReference; path = "letterpress-Info.plist"; sourceTree = "<group>"; };
+		947554C9141DD3E7000B1E18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		947554CB141DD3E7000B1E18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		947554CD141DD3E7000B1E18 /* letterpress-Prefix.pch */ = {isa = PBXFileReference; path = "letterpress-Prefix.pch"; sourceTree = "<group>"; };
+		947554CE141DD3E8000B1E18 /* letterpressAppDelegate.h */ = {isa = PBXFileReference; path = letterpressAppDelegate.h; sourceTree = "<group>"; };
+		947554CF141DD3E8000B1E18 /* letterpressAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = letterpressAppDelegate.m; sourceTree = "<group>"; };
+		947554D1141DD3E8000B1E18 /* letterpressViewController.h */ = {isa = PBXFileReference; path = letterpressViewController.h; sourceTree = "<group>"; };
+		947554D2141DD3E8000B1E18 /* letterpressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = letterpressViewController.m; sourceTree = "<group>"; };
+		947554D5141DD3E8000B1E18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/letterpressViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		947554B8141DD3E7000B1E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947554C0141DD3E7000B1E18 /* UIKit.framework in Frameworks */,
+				947554C2141DD3E7000B1E18 /* Foundation.framework in Frameworks */,
+				947554C4141DD3E7000B1E18 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		947554B0141DD3E7000B1E18 = {
+			isa = PBXGroup;
+			children = (
+				947554C5141DD3E7000B1E18 /* letterpress */,
+				947554BE141DD3E7000B1E18 /* Frameworks */,
+				947554BC141DD3E7000B1E18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		947554BC141DD3E7000B1E18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				947554BB141DD3E7000B1E18 /* letterpress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		947554BE141DD3E7000B1E18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				947554BF141DD3E7000B1E18 /* UIKit.framework */,
+				947554C1141DD3E7000B1E18 /* Foundation.framework */,
+				947554C3141DD3E7000B1E18 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		947554C5141DD3E7000B1E18 /* letterpress */ = {
+			isa = PBXGroup;
+			children = (
+				947554CE141DD3E8000B1E18 /* letterpressAppDelegate.h */,
+				947554CF141DD3E8000B1E18 /* letterpressAppDelegate.m */,
+				947554D1141DD3E8000B1E18 /* letterpressViewController.h */,
+				947554D2141DD3E8000B1E18 /* letterpressViewController.m */,
+				947554D4141DD3E8000B1E18 /* letterpressViewController.xib */,
+				947554C6141DD3E7000B1E18 /* Supporting Files */,
+			);
+			path = letterpress;
+			sourceTree = "<group>";
+		};
+		947554C6141DD3E7000B1E18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				947554C7141DD3E7000B1E18 /* letterpress-Info.plist */,
+				947554C8141DD3E7000B1E18 /* InfoPlist.strings */,
+				947554CB141DD3E7000B1E18 /* main.m */,
+				947554CD141DD3E7000B1E18 /* letterpress-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		947554BA141DD3E7000B1E18 /* letterpress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947554D9141DD3E8000B1E18 /* Build configuration list for PBXNativeTarget "letterpress" */;
+			buildPhases = (
+				947554B7141DD3E7000B1E18 /* Sources */,
+				947554B8141DD3E7000B1E18 /* Frameworks */,
+				947554B9141DD3E7000B1E18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = letterpress;
+			productName = letterpress;
+			productReference = 947554BB141DD3E7000B1E18 /* letterpress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		947554B2141DD3E7000B1E18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = None;
+			};
+			buildConfigurationList = 947554B5141DD3E7000B1E18 /* Build configuration list for PBXProject "letterpress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 947554B0141DD3E7000B1E18;
+			productRefGroup = 947554BC141DD3E7000B1E18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				947554BA141DD3E7000B1E18 /* letterpress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		947554B9141DD3E7000B1E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947554CA141DD3E7000B1E18 /* InfoPlist.strings in Resources */,
+				947554D6141DD3E8000B1E18 /* letterpressViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		947554B7141DD3E7000B1E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947554CC141DD3E7000B1E18 /* main.m in Sources */,
+				947554D0141DD3E8000B1E18 /* letterpressAppDelegate.m in Sources */,
+				947554D3141DD3E8000B1E18 /* letterpressViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		947554C8141DD3E7000B1E18 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				947554C9141DD3E7000B1E18 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		947554D4141DD3E8000B1E18 /* letterpressViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				947554D5141DD3E8000B1E18 /* en */,
+			);
+			name = letterpressViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		947554D7141DD3E8000B1E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		947554D8141DD3E8000B1E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		947554DA141DD3E8000B1E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "letterpress/letterpress-Prefix.pch";
+				INFOPLIST_FILE = "letterpress/letterpress-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		947554DB141DD3E8000B1E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "letterpress/letterpress-Prefix.pch";
+				INFOPLIST_FILE = "letterpress/letterpress-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		947554B5141DD3E7000B1E18 /* Build configuration list for PBXProject "letterpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947554D7141DD3E8000B1E18 /* Debug */,
+				947554D8141DD3E8000B1E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947554D9141DD3E8000B1E18 /* Build configuration list for PBXNativeTarget "letterpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				947554DA141DD3E8000B1E18 /* Debug */,
+				947554DB141DD3E8000B1E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 947554B2141DD3E7000B1E18 /* Project object */;
+}
