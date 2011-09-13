@@ -29,14 +29,12 @@
     int numberOfPages;
     int counter;
     
-    numberOfPages = 3;
+    numberOfPages = 4;
     
     pageWidth = 1024;
     pageHeight = 748;
     pageShift = 1025;
     
-    
-    //self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     
     self.view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, pageWidth, pageHeight)];
     
@@ -48,13 +46,28 @@
     CGSize scrollViewContentSize = CGSizeMake(pageWidth * numberOfPages, pageHeight);
     [scrollView setContentSize:scrollViewContentSize];
     
-    for (counter = 0; counter<3; counter++) {
-        UIImageView *imageN = [[UIImageView alloc] initWithFrame:CGRectMake(pageWidth*counter, 0, pageWidth, pageHeight)];
+    for (counter = 0; counter<numberOfPages; counter++) {
         
-        NSLog(@"%@",[NSString stringWithFormat:@"page%d.png",counter+1]);
         
-        imageN.image = [UIImage imageNamed:[NSString stringWithFormat:@"page%d.png",counter+1]];
-        [scrollView addSubview:imageN];
+        // Pull in the image    
+        UIImage *pageN = [UIImage imageNamed:[NSString stringWithFormat:@"page%d.jpg",counter+1]];
+        
+        // Create a scroll view
+        CGRect scrollViewFrameN = CGRectMake(pageWidth*counter, 0, pageWidth, pageHeight);
+        UIScrollView *scrollViewN = [[UIScrollView alloc] initWithFrame:scrollViewFrameN];
+        [scrollView addSubview:scrollViewN];
+        
+        CGSize scrollViewContentSize = CGSizeMake(pageN.size.width, pageN.size.height);
+        [scrollViewN setContentSize:scrollViewContentSize];
+        
+        
+        UIImageView *imageN = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, pageN.size.width, pageN.size.height)];
+        
+        NSLog(@"%@",[NSString stringWithFormat:@"page%d.jpg",counter+1]);
+        
+        imageN.image = pageN;
+        [scrollViewN addSubview:imageN];
+        
     }
     
     [scrollView setPagingEnabled:YES];
