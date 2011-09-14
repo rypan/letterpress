@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9435B33A142057D100F7C3C8 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 9435B339142057D100F7C3C8 /* Images */; };
 		947554C0141DD3E7000B1E18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554BF141DD3E7000B1E18 /* UIKit.framework */; };
 		947554C2141DD3E7000B1E18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554C1141DD3E7000B1E18 /* Foundation.framework */; };
 		947554C4141DD3E7000B1E18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554C3141DD3E7000B1E18 /* CoreGraphics.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9435B339142057D100F7C3C8 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		947554BB141DD3E7000B1E18 /* letterpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letterpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947554BF141DD3E7000B1E18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		947554C1141DD3E7000B1E18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +87,7 @@
 		947554C5141DD3E7000B1E18 /* letterpress */ = {
 			isa = PBXGroup;
 			children = (
+				9435B339142057D100F7C3C8 /* Images */,
 				947554DC141DD3F3000B1E18 /* Classes */,
 				947554DD141DD3FF000B1E18 /* Pages */,
 				947554CE141DD3E8000B1E18 /* letterpressAppDelegate.h */,
@@ -183,6 +186,7 @@
 				94D3E983141F1F3E00A147F5 /* page2.jpg in Resources */,
 				94D3E984141F1F3E00A147F5 /* page3.jpg in Resources */,
 				94D3E985141F1F3E00A147F5 /* page4.jpg in Resources */,
+				9435B33A142057D100F7C3C8 /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

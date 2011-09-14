@@ -26,12 +26,8 @@
     // Initialize variables
     int pageWidth = 1024;
     int pageHeight = 748;
-    int numberOfPages;
-    int counter;
+    int counter=0;
     
-    // Set number of pages
-    // I need to find a way to do this automatically
-    numberOfPages = 4;
     
     // Set view size
     self.view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, pageWidth, pageHeight)];
@@ -41,36 +37,49 @@
     UIScrollView *containerView = [[UIScrollView alloc] initWithFrame:containerFrame];
     [self.view addSubview:containerView];
     
-    CGSize scrollViewContentSize = CGSizeMake(pageWidth * numberOfPages, pageHeight);
+    // Put all images paths into an array
+    NSBundle *main = [NSBundle mainBundle];
+    NSArray *all = [main pathsForResourcesOfType:@"jpg" inDirectory:@"Images"];
+    
+    // Set the scroll content size    
+    CGSize scrollViewContentSize = CGSizeMake(pageWidth * all.count, pageHeight);
     [containerView setContentSize:scrollViewContentSize];
     
-    // Cycle through all pages
-    for (counter = 0; counter < numberOfPages; counter++) {
+    
+    NSArray *sortedArray = [NSArray alloc];
+    sortedArray = [all sortedArrayUsingSelector:@selector(localizedStandardCompare:)];
+    
+    // Cycle through array
+    for (NSString *path in sortedArray){
         
-        // Create image   
-        UIImage *pageN = [UIImage imageNamed:[NSString stringWithFormat:@"page%d.jpg",counter+1]];
+        // Create image
+        UIImage *pageImage = [[UIImage alloc] initWithContentsOfFile:path];
+        
+        NSLog(@"Looking at path: %@",path);
+        
         
         // Create a scroll view, set content size, and add it to "container"
         CGRect scrollViewFrameN = CGRectMake(pageWidth*counter, 0, pageWidth, pageHeight);
         UIScrollView *scrollViewN = [[UIScrollView alloc] initWithFrame:scrollViewFrameN];
         [containerView addSubview:scrollViewN];
         
-        CGSize scrollViewContentSize = CGSizeMake(pageN.size.width, pageN.size.height);
+        CGSize scrollViewContentSize = CGSizeMake(pageImage.size.width, pageImage.size.height);
         [scrollViewN setContentSize:scrollViewContentSize];
         
         // Add image to scroll view
-        UIImageView *imageN = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, pageN.size.width, pageN.size.height)];
-        imageN.image = pageN;
+        UIImageView *imageN = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, pageImage.size.width, pageImage.size.height)];
+        imageN.image = pageImage;
         [scrollViewN addSubview:imageN];
+        
+        // Increment the counter
+        counter++;
         
     }
     
     // Settings for "container"
     [containerView setPagingEnabled:YES];
     [containerView setShowsHorizontalScrollIndicator:NO];
-    [containerView setShowsVerticalScrollIndicator:NO];
-    
-    
+    [containerView setShowsVerticalScrollIndicator:NO];    
 }
 
 - (void)viewDidUnload
