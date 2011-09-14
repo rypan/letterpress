@@ -16,10 +16,6 @@
 		947554D0141DD3E8000B1E18 /* letterpressAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 947554CF141DD3E8000B1E18 /* letterpressAppDelegate.m */; };
 		947554D3141DD3E8000B1E18 /* letterpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947554D2141DD3E8000B1E18 /* letterpressViewController.m */; };
 		947554D6141DD3E8000B1E18 /* letterpressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947554D4141DD3E8000B1E18 /* letterpressViewController.xib */; };
-		94D3E982141F1F3E00A147F5 /* page1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94D3E97E141F1F3E00A147F5 /* page1.jpg */; };
-		94D3E983141F1F3E00A147F5 /* page2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94D3E97F141F1F3E00A147F5 /* page2.jpg */; };
-		94D3E984141F1F3E00A147F5 /* page3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94D3E980141F1F3E00A147F5 /* page3.jpg */; };
-		94D3E985141F1F3E00A147F5 /* page4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94D3E981141F1F3E00A147F5 /* page4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +33,6 @@
 		947554D1141DD3E8000B1E18 /* letterpressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = letterpressViewController.h; sourceTree = "<group>"; };
 		947554D2141DD3E8000B1E18 /* letterpressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = letterpressViewController.m; sourceTree = "<group>"; };
 		947554D5141DD3E8000B1E18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/letterpressViewController.xib; sourceTree = "<group>"; };
-		94D3E97E141F1F3E00A147F5 /* page1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page1.jpg; sourceTree = "<group>"; };
-		94D3E97F141F1F3E00A147F5 /* page2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page2.jpg; sourceTree = "<group>"; };
-		94D3E980141F1F3E00A147F5 /* page3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page3.jpg; sourceTree = "<group>"; };
-		94D3E981141F1F3E00A147F5 /* page4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +81,6 @@
 			children = (
 				9435B339142057D100F7C3C8 /* Images */,
 				947554DC141DD3F3000B1E18 /* Classes */,
-				947554DD141DD3FF000B1E18 /* Pages */,
 				947554CE141DD3E8000B1E18 /* letterpressAppDelegate.h */,
 				947554CF141DD3E8000B1E18 /* letterpressAppDelegate.m */,
 				947554D4141DD3E8000B1E18 /* letterpressViewController.xib */,
@@ -116,17 +107,6 @@
 				947554D2141DD3E8000B1E18 /* letterpressViewController.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		947554DD141DD3FF000B1E18 /* Pages */ = {
-			isa = PBXGroup;
-			children = (
-				94D3E97E141F1F3E00A147F5 /* page1.jpg */,
-				94D3E97F141F1F3E00A147F5 /* page2.jpg */,
-				94D3E980141F1F3E00A147F5 /* page3.jpg */,
-				94D3E981141F1F3E00A147F5 /* page4.jpg */,
-			);
-			name = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,10 +162,6 @@
 			files = (
 				947554CA141DD3E7000B1E18 /* InfoPlist.strings in Resources */,
 				947554D6141DD3E8000B1E18 /* letterpressViewController.xib in Resources */,
-				94D3E982141F1F3E00A147F5 /* page1.jpg in Resources */,
-				94D3E983141F1F3E00A147F5 /* page2.jpg in Resources */,
-				94D3E984141F1F3E00A147F5 /* page3.jpg in Resources */,
-				94D3E985141F1F3E00A147F5 /* page4.jpg in Resources */,
 				9435B33A142057D100F7C3C8 /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
