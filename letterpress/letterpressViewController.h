@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface letterpressViewController : UIViewController
+@interface letterpressViewController : UIViewController{
+    UIImageView *testImageView;
+    UIScrollView *containerView;
+    UIScrollView *tocView;
+    int pageWidth;
+    int pageHeight;
+    BOOL toc;
+}
 
 @end

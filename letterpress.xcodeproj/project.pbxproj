@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9435B33A142057D100F7C3C8 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 9435B339142057D100F7C3C8 /* Images */; };
+		945B55471445660D00C5856F /* background-letterpress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 945B55461445660D00C5856F /* background-letterpress.jpg */; };
 		947554C0141DD3E7000B1E18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554BF141DD3E7000B1E18 /* UIKit.framework */; };
 		947554C2141DD3E7000B1E18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554C1141DD3E7000B1E18 /* Foundation.framework */; };
 		947554C4141DD3E7000B1E18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947554C3141DD3E7000B1E18 /* CoreGraphics.framework */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		9435B339142057D100F7C3C8 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		945B55461445660D00C5856F /* background-letterpress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-letterpress.jpg"; sourceTree = "<group>"; };
 		947554BB141DD3E7000B1E18 /* letterpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letterpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947554BF141DD3E7000B1E18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		947554C1141DD3E7000B1E18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,6 +86,7 @@
 				947554CE141DD3E8000B1E18 /* letterpressAppDelegate.h */,
 				947554CF141DD3E8000B1E18 /* letterpressAppDelegate.m */,
 				947554D4141DD3E8000B1E18 /* letterpressViewController.xib */,
+				945B55461445660D00C5856F /* background-letterpress.jpg */,
 				947554C6141DD3E7000B1E18 /* Supporting Files */,
 			);
 			path = letterpress;
@@ -163,6 +166,7 @@
 				947554CA141DD3E7000B1E18 /* InfoPlist.strings in Resources */,
 				947554D6141DD3E8000B1E18 /* letterpressViewController.xib in Resources */,
 				9435B33A142057D100F7C3C8 /* Images in Resources */,
+				945B55471445660D00C5856F /* background-letterpress.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
